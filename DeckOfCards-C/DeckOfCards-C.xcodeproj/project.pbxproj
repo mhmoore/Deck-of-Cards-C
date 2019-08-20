@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		A55BED89230C83E500234054 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BED88230C83E500234054 /* AppDelegate.m */; };
-		A55BED8C230C83E500234054 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BED8B230C83E500234054 /* ViewController.m */; };
 		A55BED8F230C83E500234054 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55BED8D230C83E500234054 /* Main.storyboard */; };
 		A55BED91230C83E600234054 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A55BED90230C83E600234054 /* Assets.xcassets */; };
 		A55BED94230C83E600234054 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55BED92230C83E600234054 /* LaunchScreen.storyboard */; };
 		A55BED97230C83E600234054 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BED96230C83E600234054 /* main.m */; };
+		A55BED9F230C87FB00234054 /* DVMCard.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BED9E230C87FB00234054 /* DVMCard.m */; };
+		A55BEDA6230C931C00234054 /* DVMCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BEDA5230C931C00234054 /* DVMCardController.m */; };
+		A55BEDAD230CAAD900234054 /* DVMCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55BEDAC230CAAD900234054 /* DVMCardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A55BED84230C83E500234054 /* DeckOfCards-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DeckOfCards-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55BED87230C83E500234054 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A55BED88230C83E500234054 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A55BED8A230C83E500234054 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A55BED8B230C83E500234054 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A55BED8E230C83E500234054 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A55BED90230C83E600234054 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A55BED93230C83E600234054 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A55BED95230C83E600234054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A55BED96230C83E600234054 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A55BED9D230C87FB00234054 /* DVMCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMCard.h; sourceTree = "<group>"; };
+		A55BED9E230C87FB00234054 /* DVMCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMCard.m; sourceTree = "<group>"; };
+		A55BEDA4230C931C00234054 /* DVMCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMCardController.h; sourceTree = "<group>"; };
+		A55BEDA5230C931C00234054 /* DVMCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMCardController.m; sourceTree = "<group>"; };
+		A55BEDAC230CAAD900234054 /* DVMCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVMCardViewController.swift; sourceTree = "<group>"; };
+		A55BEDAE230CAC1700234054 /* DeckOfCards-C-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeckOfCards-C-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +64,53 @@
 		A55BED86230C83E500234054 /* DeckOfCards-C */ = {
 			isa = PBXGroup;
 			children = (
-				A55BED87230C83E500234054 /* AppDelegate.h */,
-				A55BED88230C83E500234054 /* AppDelegate.m */,
-				A55BED8A230C83E500234054 /* ViewController.h */,
-				A55BED8B230C83E500234054 /* ViewController.m */,
+				A55BEDA0230C880600234054 /* Resources */,
+				A55BEDA3230C884C00234054 /* Model Controller */,
+				A55BEDA1230C882800234054 /* View Controller */,
+				A55BEDA2230C883600234054 /* Model */,
 				A55BED8D230C83E500234054 /* Main.storyboard */,
+			);
+			path = "DeckOfCards-C";
+			sourceTree = "<group>";
+		};
+		A55BEDA0230C880600234054 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A55BED87230C83E500234054 /* AppDelegate.h */,
+				A55BEDAE230CAC1700234054 /* DeckOfCards-C-Bridging-Header.h */,
+				A55BED88230C83E500234054 /* AppDelegate.m */,
 				A55BED90230C83E600234054 /* Assets.xcassets */,
 				A55BED92230C83E600234054 /* LaunchScreen.storyboard */,
 				A55BED95230C83E600234054 /* Info.plist */,
 				A55BED96230C83E600234054 /* main.m */,
 			);
-			path = "DeckOfCards-C";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A55BEDA1230C882800234054 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A55BEDAC230CAAD900234054 /* DVMCardViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		A55BEDA2230C883600234054 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A55BED9D230C87FB00234054 /* DVMCard.h */,
+				A55BED9E230C87FB00234054 /* DVMCard.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A55BEDA3230C884C00234054 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A55BEDA4230C931C00234054 /* DVMCardController.h */,
+				A55BEDA5230C931C00234054 /* DVMCardController.m */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +144,7 @@
 				TargetAttributes = {
 					A55BED83230C83E500234054 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -141,9 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A55BED8C230C83E500234054 /* ViewController.m in Sources */,
+				A55BEDAD230CAAD900234054 /* DVMCardViewController.swift in Sources */,
+				A55BED9F230C87FB00234054 /* DVMCard.m in Sources */,
 				A55BED97230C83E600234054 /* main.m in Sources */,
 				A55BED89230C83E500234054 /* AppDelegate.m in Sources */,
+				A55BEDA6230C931C00234054 /* DVMCardController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,15 +330,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5H77479UZ4;
-				INFOPLIST_FILE = "DeckOfCards-C/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfCards-C/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.michaelhmoore.DeckOfCards-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeckOfCards-C/Resources/DeckOfCards-C-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -302,15 +351,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5H77479UZ4;
-				INFOPLIST_FILE = "DeckOfCards-C/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfCards-C/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.michaelhmoore.DeckOfCards-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeckOfCards-C/Resources/DeckOfCards-C-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
